@@ -1,0 +1,6 @@
+pytrends
+prophet
+pandas
+matplotlib
+numpy
+streamlit
