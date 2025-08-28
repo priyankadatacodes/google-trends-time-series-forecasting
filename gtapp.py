@@ -1,5 +1,3 @@
-# Save this as app.py and run with: streamlit run app.py
-
 import streamlit as st
 import pandas as pd
 from pytrends.request import TrendReq
@@ -77,4 +75,5 @@ else:
     forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].to_csv(csv_buffer, index=False)
     csv_data = csv_buffer.getvalue()
     st.download_button(label="Download Forecast Data as CSV", data=csv_data, file_name=f"{selected_keyword}_forecast.csv", mime='text/csv')
+
 
